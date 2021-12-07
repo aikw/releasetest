@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/aikw/releasetest#readme",
   "ricohLsSdk" : {
-    "preRelease": "alpha2"
+    "preRelease": "alpha3"
   }
 }

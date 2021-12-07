@@ -1,7 +1,5 @@
 #!/bin/bash -eu
 
-cd "cappella-web"
-
 OWNER=aikw
 REPO=releasetest
 
@@ -19,7 +17,7 @@ const pr=r&&r.preRelease?"true":"false";
 console.log(pr)'`
 
 HASH=`echo $VERSION | sed 's/\.//g' | sed 's/\+[0-9]*//g'`
-DESCRIPTION="CHANGE LOG: https://github.com/${OWNER}/${REPO}/blob/master/README.md#v${HASH}"
+DESCRIPTION="CHANGE LOG: https://github.com/${OWNER}/${REPO}/blob/main/README.md#v${HASH}"
 
 API_ENDPOINT="https://api.github.com/repos/${OWNER}/${REPO}"
 ACCEPT_HEADER="Accept: application/vnd.github.v3+json"
@@ -30,6 +28,8 @@ echo "creatting new release for ${VERSION}"
 REPLY=$(curl \
   -H "${ACCEPT_HEADER}" \
   -H "${TOKEN_HEADER}" \
-  -d "{\"tag_name\": \"${VERSION}\", \"name\": \"${VERSION}\", \"body\": \"${DESCRIPTION}\", \"prerelease\": ${PRE_RELEASE}}" \
+  -d "{\"target_commitish\": \"main\", \"tag_name\": \"${VERSION}\", \"name\": \"${VERSION}\", \"body\": \"${DESCRIPTION}\", \"prerelease\": ${PRE_RELEASE}}" \
   "${API_ENDPOINT}/releases" \
   )
+
+echo $REPLY
