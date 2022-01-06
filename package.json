@@ -1,22 +1,17 @@
 {
-  "name": "releasetest",
-  "version": "1.0.0",
-  "description": "develop",
-  "main": "index.js",
+  "name": "@ricoh-live-streaming-api/web-sdk",
+  "version": "",
+  "description": "ricoh-ls-sdk",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -a localhost -o demo -p 3000 -s"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aikw/releasetest.git"
+  "devDependencies": {
+    "http-server": "^13.0.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aikw/releasetest/issues"
-  },
-  "homepage": "https://github.com/aikw/releasetest#readme",
-  "ricohLsSdk" : {
-    "preRelease": "alpha1"
+  "dependencies": {},
+  "main": "src/ricoh-ls-sdk.js",
+  "types": "src/ricoh-ls-sdk.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ricoh-live-streaming-api"
   }
 }
