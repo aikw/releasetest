@@ -1,5 +1,5 @@
 {
-  "name": "@ricoh-live-streaming-api/web-sdk",
+  "name": "@aikw/releasetest",
   "version": "1.2.0",
   "description": "ricoh-ls-sdk",
   "scripts": {
@@ -12,6 +12,6 @@
   "main": "src/ricoh-ls-sdk.js",
   "types": "src/ricoh-ls-sdk.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ricoh-live-streaming-api"
+    "registry": "https://npm.pkg.github.com/aikw"
   }
 }
