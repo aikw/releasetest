@@ -1,6 +1,6 @@
 {
   "name": "@aikw/releasetest",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "ricoh-ls-sdk",
   "scripts": {
     "start": "http-server -a localhost -o demo -p 3000 -s"
@@ -13,8 +13,5 @@
   "types": "src/ricoh-ls-sdk.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/aikw"
-  },
-  "ricohLsSdk" : {
-    "preRelease" : "alpha1"
-  }  
+  }
 }
