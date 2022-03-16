@@ -15,6 +15,6 @@
     "registry": "https://npm.pkg.github.com/aikw"
   },
   "ricohLsSdk" : {
-    "preRelease": "alpha1"
+    "preRelease": "alpha2"
   }  
 }
