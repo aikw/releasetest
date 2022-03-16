@@ -25,7 +25,7 @@ jobs:
         with:
           files: package.json        
           tag_name: v${{ steps.check_version.outputs.VERSION }}
-          release_name: v${{ steps.check_version.outputs.VERSION }}
+          name: v${{ steps.check_version.outputs.VERSION }}
           body: v${{ steps.check_version.outputs.VERSION }}
           draft: false
           prerelease: false
@@ -38,7 +38,7 @@ jobs:
         with:
           files: package.json
           tag_name: v${{ steps.check_version.outputs.VERSION }}-${{ steps.check_pre.outputs.PRE }}
-          release_name: v${{ steps.check_version.outputs.VERSION }}-${{ steps.check_pre.outputs.PRE }}
+          name: v${{ steps.check_version.outputs.VERSION }}-${{ steps.check_pre.outputs.PRE }}
           body: v${{ steps.check_version.outputs.VERSION }}
           draft: false
           prerelease: true
