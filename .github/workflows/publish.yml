@@ -19,7 +19,7 @@ jobs:
       - name: Create Release
         id: create_release
         if: steps.check_pre.outputs.PRE == '' || steps.check_pre.outputs.PRE == 'undefined'        
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
