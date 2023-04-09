@@ -1,0 +1,22 @@
+{
+  "name": "releasetest",
+  "version": "1.0.0",
+  "description": "develop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aikw/releasetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aikw/releasetest/issues"
+  },
+  "homepage": "https://github.com/aikw/releasetest#readme",
+  "ricohLsSdk" : {
+    "preRelease": "alpha1"
+  }
+}
